@@ -1,0 +1,1 @@
+DATABASE = "swapi.db"
