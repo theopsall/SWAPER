@@ -149,6 +149,7 @@ def clean_cache() -> None:
         cursor = conn.execute("DELETE  FROM CACHE;")
         conn.commit()
         conn.close()
+        print("removed cache")
     except (sqlite3.Error, sqlite3.Warning) as e:
         raise Exception(e)
 
