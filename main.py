@@ -5,8 +5,8 @@ import requests
 
 from src.cli import parse_args
 from src.db.db import clean_cache, get_cache, init_db, insert_cache
-from src.lib.swapi import handle_character_response, swapi_search
-from src.lib.visualization import visualize
+from src.libs.swapi import handle_character_response, swapi_search
+from src.libs.visualization import visualize
 
 
 def search_task(search_query: str, world: str):
